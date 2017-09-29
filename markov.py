@@ -35,7 +35,7 @@ def buildDict(text):
     
     return mydict;
 
-def buildMarkof(dictionary, length):
+def buildMarkov(dictionary, length):
 
     output = ""
     curPref = " "
@@ -66,6 +66,6 @@ def main():
     #print(mydict)
     outputFile = open("output.txt", "w")
 
-    outputFile.write(buildMarkof(mydict, 1000))
+    outputFile.write(buildMarkov(mydict, 1000))
 
 main()
